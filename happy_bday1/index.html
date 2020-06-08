@@ -1,18 +1,32 @@
 <!DOCTYPE html>
 <html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-body {
-  background-image: url('b.jpg');
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bg {
+  /* The image used */
+  background-image: url("b.jpg");
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;  
-  background-size: 100% 100%;
+  background-size: cover;
 }
 </style>
+</head>
 <body>
 
-<h2>Background Cover</h2>
+<div class="bg"></div>
 
-<p>Set the background-size property to "cover" and the background image will cover the entire element, in this case the BODY element.</p>
+<p>This example creates a full page background image. Try to resize the browser window to see how it always will cover the full screen (when scrolled to top), and that it scales nicely on all screen sizes.</p>
 
 </body>
 </html>
